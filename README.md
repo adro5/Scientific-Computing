@@ -1,6 +1,8 @@
 # Scientific-Computing
 Compilation of projects from Introduction to Scientific Computing (FSU course ISC3313)
 
+# Math Functions
+
 # makefile
 Makefile was made to run with the prebuilt driver.cpp file. This may be modified and included in this repo later
 
@@ -17,3 +19,9 @@ If a custom driver file is made, the driver will need to set an equation (such a
 1000 coordinate pairs are provided in data3x.txt and can be passed into the program to calculate the curve that best fits the data points.
 
 If vector B needs to be a 2D vector of size nx1, change it and arguments from type vector<float> to vector<vector<float>> and update gaussianElimination function and other functions that include B (ex. B[i][0]). Probably not gonna need to but it's an option
+
+# Password Project
+
+Visual Studio 2017 C# Universal Windows Application
+
+Work In Progress. 
