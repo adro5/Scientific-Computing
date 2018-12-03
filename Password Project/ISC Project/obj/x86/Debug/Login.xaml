@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="ISC_Project.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ISC_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' x:Name="Tiles">
+        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" Text="Sign In" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
+        <TextBox x:ConnectionId='3' x:Name="Name" HorizontalAlignment="Center" Margin="0,355,0,0" Text="" VerticalAlignment="Top" Height="29" Width="490" PlaceholderText="Name"/>
+        <Button x:ConnectionId='4' x:Name="btnLogin" Content="Next" HorizontalAlignment="Center" Margin="0,808,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
+
