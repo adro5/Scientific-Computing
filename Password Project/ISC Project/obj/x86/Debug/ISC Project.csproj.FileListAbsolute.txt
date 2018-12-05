@@ -231,3 +231,8 @@ D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Login.xaml
 D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Success.xaml
 D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Login.xbf
 D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Success.xbf
+D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Backup.xbf
+D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Backup.g.i.cs
+D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Backup.g.cs
+D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Backup.xaml
+D:\macro\source\repos\ISC Project\ISC Project\obj\x86\Debug\Backup.xbf

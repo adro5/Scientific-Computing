@@ -128,11 +128,11 @@ namespace ISC_Project
 
                     if (lockCheck.IsChecked == true)
                     {
-                        settings.Values["Lock"] = true;
+                        settings.Values["Lock"] = "true";
                     }
                     else
                     {
-                        settings.Values["Lock"] = false;
+                        settings.Values["Lock"] = "false";
                     }
 
                     filename.Visibility = Visibility.Visible;

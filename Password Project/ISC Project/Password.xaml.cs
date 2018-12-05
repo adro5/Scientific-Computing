@@ -31,12 +31,13 @@ namespace ISC_Project
         Random rnd = new Random();
         PasswordVault vault = new PasswordVault();
         string password = "";
-        int counter = 3;
+        int counter = 4;
 
         public Password()
         {
             this.InitializeComponent();
 
+            // For the purposes of this project, there will only be a grid of 7 spots
             CreateGrid(7);
         }
 

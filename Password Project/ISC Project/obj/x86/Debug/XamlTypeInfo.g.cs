@@ -189,21 +189,29 @@ namespace ISC_Project.ISC_Project_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "ISC_Project.Login";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ISC_Project.MainPage";
-            _typeNameTable[4] = "ISC_Project.Password";
-            _typeNameTable[5] = "ISC_Project.Success";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "ISC_Project.Backup";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[3] = "Boolean";
+            _typeNameTable[4] = "ISC_Project.Login";
+            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "ISC_Project.MainPage";
+            _typeNameTable[8] = "ISC_Project.Password";
+            _typeNameTable[9] = "ISC_Project.Success";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::ISC_Project.Login);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ISC_Project.MainPage);
-            _typeTable[4] = typeof(global::ISC_Project.Password);
-            _typeTable[5] = typeof(global::ISC_Project.Success);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::ISC_Project.Backup);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[3] = typeof(global::System.Boolean);
+            _typeTable[4] = typeof(global::ISC_Project.Login);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::ISC_Project.MainPage);
+            _typeTable[8] = typeof(global::ISC_Project.Password);
+            _typeTable[9] = typeof(global::ISC_Project.Success);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -238,10 +246,11 @@ namespace ISC_Project.ISC_Project_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Login() { return new global::ISC_Project.Login(); }
-        private object Activate_3_MainPage() { return new global::ISC_Project.MainPage(); }
-        private object Activate_4_Password() { return new global::ISC_Project.Password(); }
-        private object Activate_5_Success() { return new global::ISC_Project.Success(); }
+        private object Activate_0_Backup() { return new global::ISC_Project.Backup(); }
+        private object Activate_4_Login() { return new global::ISC_Project.Login(); }
+        private object Activate_7_MainPage() { return new global::ISC_Project.MainPage(); }
+        private object Activate_8_Password() { return new global::ISC_Project.Password(); }
+        private object Activate_9_Success() { return new global::ISC_Project.Success(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -253,38 +262,58 @@ namespace ISC_Project.ISC_Project_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ISC_Project.Login
-                userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_Login;
+            case 0:   //  ISC_Project.Backup
+                userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
+                userType.Activator = Activate_0_Backup;
+                userType.AddMemberName("result");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Windows.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ISC_Project.MainPage
+            case 3:   //  Boolean
+                xamlType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  ISC_Project.Login
                 userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_4_Login;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  ISC_Project.Password
+            case 5:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  ISC_Project.MainPage
                 userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Password;
+                userType.Activator = Activate_7_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  ISC_Project.Success
+            case 8:   //  ISC_Project.Password
                 userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Success;
+                userType.Activator = Activate_8_Password;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  ISC_Project.Success
+                userType = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Success;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -293,11 +322,26 @@ namespace ISC_Project.ISC_Project_XamlTypeInfo
         }
 
 
+        private object get_0_Backup_result(object instance)
+        {
+            var that = (global::ISC_Project.Backup)instance;
+            return that.result;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ISC_Project.ISC_Project_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "ISC_Project.Backup.result":
+                userType = (global::ISC_Project.ISC_Project_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ISC_Project.Backup");
+                xamlMember = new global::ISC_Project.ISC_Project_XamlTypeInfo.XamlMember(this, "result", "Boolean");
+                xamlMember.Getter = get_0_Backup_result;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

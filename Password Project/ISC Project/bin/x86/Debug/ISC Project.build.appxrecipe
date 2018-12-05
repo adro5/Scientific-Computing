@@ -406,6 +406,9 @@
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Backup.xbf">
+      <PackagePath>Backup.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
     </AppxPackagedFile>

@@ -32,9 +32,9 @@ namespace ISC_Project
     {
         PasswordVault vault = new PasswordVault();
         string password = "";
-        int counter = 3;
+        int counter = 4;
         int triesRemaining = 5;
-
+        ApplicationDataContainer settings = ApplicationData.Current.LocalSettings;
         public Login()
         {
             this.InitializeComponent();
@@ -47,7 +47,7 @@ namespace ISC_Project
             {
                 Name.Visibility = Visibility.Collapsed;
                 btnLogin.Visibility = Visibility.Collapsed;
-                StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(ApplicationData.Current.LocalSettings.Values["ImageName"].ToString());
+                StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(settings.Values["ImageName"].ToString());
                 using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read))
                 {
                     BitmapImage bitmap = new BitmapImage();
@@ -97,41 +97,48 @@ namespace ISC_Project
             PasswordCredential passwordCredential;
             if (counter == 0)
             {
-                try
-                {
-                    var credentials = vault.FindAllByUserName(ApplicationData.Current.LocalSettings.Values["Name"].ToString());
-                    if (credentials.Count > 0)
-                    {
-                        if (credentials.Count == 1)
-                        {
-                            passwordCredential = credentials[0];
-                            passwordCredential.RetrievePassword();
-                            if (passwordCredential.Password == password)
-                                await Navigate();
-                            else
-                                throw new InvalidPasswordException("Invalid Password");
-                        }
-                    }
+                var credentials = vault.FindAllByUserName(settings.Values["Name"].ToString());
 
-                }
-                catch (Exception ex)
+                // For these purposes, we should only have one name that matches
+                if (credentials.Count == 1)
                 {
-                    var message = new MessageDialog("Not found", ex.Message);
-                    await message.ShowAsync();
+                    passwordCredential = credentials[0];
+                    passwordCredential.RetrievePassword();
+                    if (passwordCredential.Password == password)
+                        await Navigate();
                 }
-
+            }
+            if (settings.Values["Lock"].ToString() == "true" && counter == 0)
+            {
                 if (triesRemaining == 0)
                 {
-                    var message = new MessageDialog("Account Locked");
+                    var message = new MessageDialog("Please contact administrator or enter back up password", "Account Locked");
                     await message.ShowAsync();
                     password = "";
+                    // Backup Password Dialog
+                    Backup backup = new Backup()
+                    {
+                        PrimaryButtonText = "Login",
+                        SecondaryButtonText = "Cancel"
+                    };
+                    ContentDialogResult dialogResult = await backup.ShowAsync();
+                    while (dialogResult != ContentDialogResult.Secondary)
+                    {
+                        // Checking if backup password is a match
+                        if (dialogResult == ContentDialogResult.Primary && backup.result == true)
+                        {
+                            await Navigate();
+                            break;
+                        }
+                        dialogResult = await backup.ShowAsync();
+                    }
                 }
                 else if (triesRemaining > 0)
                 {
                     password = "";
                     triesRemaining--;
-                    counter = 3;
-                    
+                    counter = 4;
+
                 }
             }
         }

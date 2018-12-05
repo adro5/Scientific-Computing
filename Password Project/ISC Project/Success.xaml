@@ -10,7 +10,10 @@
 
     <Grid>
         <TextBlock x:Name="Title" HorizontalAlignment="Center" Margin="0,167,0,0" Text="Welcome " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
-        <TextBlock x:Name="Calc" HorizontalAlignment="Center" Margin="0,392,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-
+        <TextBlock x:Name="Specs" Text="Computer Specs: 2.5 GHz 4 Core Intel Core i5" HorizontalAlignment="Center" FontSize="20" Margin="0,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Calc" HorizontalAlignment="Center" Margin="0,709,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="Calc2" HorizontalAlignment="Center" Margin="0,461,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="Calc3" HorizontalAlignment="Center" Margin="0,540,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="Calc4" HorizontalAlignment="Center" Margin="0,628,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
     </Grid>
 </Page>

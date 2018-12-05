@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-03T21:14:42.694</Modified>
+      <Modified>2018-12-05T08:28:04.994</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\ISC Project.exe">
       <PackagePath>entrypoint\ISC Project.exe</PackagePath>
-      <Modified>2018-12-03T21:14:42.436</Modified>
+      <Modified>2018-12-05T08:28:04.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -534,27 +534,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\ISC Project.xr.xml">
       <PackagePath>ISC Project.xr.xml</PackagePath>
-      <Modified>2018-12-03T17:46:53.986</Modified>
+      <Modified>2018-12-05T06:58:24.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-03T21:14:42.276</Modified>
+      <Modified>2018-12-05T08:28:04.439</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Backup.xbf">
+      <PackagePath>Backup.xbf</PackagePath>
+      <Modified>2018-12-05T08:28:04.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
-      <Modified>2018-12-03T21:14:42.276</Modified>
+      <Modified>2018-12-05T08:28:04.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-03T21:14:42.276</Modified>
+      <Modified>2018-12-05T08:28:04.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Password.xbf">
       <PackagePath>Password.xbf</PackagePath>
-      <Modified>2018-12-03T21:14:42.277</Modified>
+      <Modified>2018-12-05T08:28:04.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Success.xbf">
       <PackagePath>Success.xbf</PackagePath>
-      <Modified>2018-12-03T21:14:42.277</Modified>
+      <Modified>2018-12-05T08:28:04.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -562,11 +566,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-12-03T17:46:56.350</Modified>
+      <Modified>2018-12-05T05:55:22.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\macro\source\repos\ISC Project\ISC Project\bin\x86\Debug\Core\ISC Project.exe">
       <PackagePath>ISC Project.exe</PackagePath>
-      <Modified>2018-12-03T21:14:42.690</Modified>
+      <Modified>2018-12-05T08:28:04.990</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
